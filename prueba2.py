@@ -1,6 +1,6 @@
 import random
 
-def numeroAleatorio():
+def AdivinaElnumero():
     while True:
 
         numero = random.randint(0, 10)
@@ -10,7 +10,8 @@ def numeroAleatorio():
             usuario = input("quieres volverlo a intentar (s/n):")
             if usuario == "s":
                 usuario = int(input("Adivina el numero (0, 10): "))
-            elif print("programa finalizado"):
+            elif usuario == "n":
+                print("programa finalizado")
                 break 
             else:
                 print("Introduce 's' o 'n'")
@@ -18,5 +19,5 @@ def numeroAleatorio():
             print(f"felicidades el numero {numero} es el correcto")
             break 
 
-numeroAleatorio()
+AdivinaElnumero()
 

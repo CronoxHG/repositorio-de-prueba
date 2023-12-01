@@ -11,4 +11,4 @@ def CreateDni():
     dni = numeros + array_lletres[resto]
     return dni
 
-CreateDni()
+print(CreateDni())
